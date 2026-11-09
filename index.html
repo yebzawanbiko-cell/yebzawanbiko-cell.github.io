@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#082B71">
+<title>HU Fellow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app" id="app">
+
+  <header class="app-bar">
+    <img src="logo.png" alt="HU Fellow logo" class="app-bar__logo">
+    <span class="app-bar__title">HU FELLOW</span>
+  </header>
+
+  <main class="screens">
+
+    <!-- HOME -->
+    <section class="screen" id="screen-home" data-screen="home">
+      <div class="hero">
+        <p class="hero__eyebrow">Social media links</p>
+        <h1 class="hero__title">Follow HU Fellow Using The Following Links</h1>
+        <p class="hero__text">Hawassa University Main Campus Evangelical Christian Students Fellowship.</p>
+      </div>
+
+      <div class="channel-list">
+        <a class="row" href="https://t.me/HUfellow" data-app="telegram" target="_blank" rel="noopener">
+          <span class="row__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 3 10.5l6 2.5 2.5 6.5L14 15l5 4z"/></svg>
+          </span>
+          <span class="row__body">
+            <span class="row__title">Telegram channel</span>
+            <span class="row__meta">HUFELLOW · public channel</span>
+          </span>
+          <svg class="row__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </a>
+
+        <a class="row" href="https://www.instagram.com/hufellow/" data-app="instagram" target="_blank" rel="noopener">
+          <span class="row__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff"/></svg>
+          </span>
+          <span class="row__body">
+            <span class="row__title">Instagram account</span>
+            <span class="row__meta">@hufellow · 3,325 followers</span>
+          </span>
+          <svg class="row__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </a>
+
+        <a class="row" href="https://www.youtube.com/@hufellow" data-app="youtube" target="_blank" rel="noopener">
+          <span class="row__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9v6l5-3z"/></svg>
+          </span>
+          <span class="row__body">
+            <span class="row__title">YouTube channel</span>
+            <span class="row__meta">@hufellow · 5.08K subscribers</span>
+          </span>
+          <svg class="row__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </a>
+
+        <a class="row" href="https://www.tiktok.com/@hufellow" data-app="tiktok" target="_blank" rel="noopener">
+          <span class="row__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2 4.2 5 4.5"/></svg>
+          </span>
+          <span class="row__body">
+            <span class="row__title">TikTok account</span>
+            <span class="row__meta">@hufellow · 12.7K followers</span>
+          </span>
+          <svg class="row__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- CHANNELS -->
+    <section class="screen screen--padded" id="screen-channels" data-screen="channels" hidden>
+      <h2 class="screen__title">Channels</h2>
+
+      <div class="segmented" role="tablist" aria-label="Choose a platform">
+        <button class="segmented__btn is-active" role="tab" aria-selected="true" data-platform="telegram" type="button">Telegram</button>
+        <button class="segmented__btn" role="tab" aria-selected="false" data-platform="instagram" type="button">Instagram</button>
+        <button class="segmented__btn" role="tab" aria-selected="false" data-platform="youtube" type="button">YouTube</button>
+        <button class="segmented__btn" role="tab" aria-selected="false" data-platform="tiktok" type="button">TikTok</button>
+      </div>
+
+      <article class="card" data-card="telegram">
+        <h3 class="card__title">Telegram channel</h3>
+        <img class="card__img" src="telegram.png" alt="HUFELLOW public Telegram channel profile">
+        <p class="card__meta">HUFELLOW · public channel</p>
+        <a class="btn" href="https://t.me/HUfellow" data-app="telegram" target="_blank" rel="noopener">Open Telegram</a>
+      </article>
+
+      <article class="card" data-card="instagram" hidden>
+        <h3 class="card__title">Instagram account</h3>
+        <img class="card__img" src="instagram.png" alt="HU Fellow Instagram profile">
+        <p class="card__meta">677 posts · 3,325 followers</p>
+        <a class="btn" href="https://www.instagram.com/hufellow/" data-app="instagram" target="_blank" rel="noopener">Open Instagram</a>
+      </article>
+
+      <article class="card" data-card="youtube" hidden>
+        <h3 class="card__title">YouTube channel</h3>
+        <img class="card__img" src="youtube.png" alt="HUfellow YouTube channel header">
+        <p class="card__meta">5.08K subscribers · 97 videos</p>
+        <a class="btn" href="https://www.youtube.com/@hufellow" data-app="youtube" target="_blank" rel="noopener">Open YouTube</a>
+      </article>
+
+      <article class="card" data-card="tiktok" hidden>
+        <h3 class="card__title">TikTok account</h3>
+        <img class="card__img" src="tiktok.png" alt="Hawassa University Fellowship TikTok profile">
+        <p class="card__meta">12.7K followers · 190.1K likes</p>
+        <a class="btn" href="https://www.tiktok.com/@hufellow" data-app="tiktok" target="_blank" rel="noopener">Open TikTok</a>
+      </article>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="screen screen--padded" id="screen-about" data-screen="about" hidden>
+      <h2 class="screen__title">About</h2>
+      <div class="card card--center">
+        <img class="about__wordmark" src="wordmark.png" alt="ክርስቶስን መስማት">
+        <p class="about__text">Hawassa University Main Campus Evangelical Christian Students Fellowship</p>
+      </div>
+      <p class="note">Follower counts are as shown when the original image was made.
+            የተከታዮች ብዛት መረጃው በተዘጋጀበት ወቅት የነበረውን ነው።
+      </p>
+      <button class="btn btn--button" id="replay" type="button">Replay intro</button>
+    </section>
+
+  </main>
+
+  <nav class="tabbar" aria-label="App sections">
+    <button class="tab is-active" data-tab="home" aria-current="page" type="button">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7v9H3z"/></svg>
+      <span>Home</span>
+    </button>
+    <button class="tab" data-tab="channels" type="button">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18"/></svg>
+      <span>Channels</span>
+    </button>
+    <button class="tab" data-tab="about" type="button">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>
+      <span>About</span>
+    </button>
+  </nav>
+
+  <!-- SPLASH / INTRO -->
+  <div class="intro play" id="intro" aria-hidden="true">
+    <svg class="intro__pattern" width="100%" height="100%">
+      <defs>
+        <pattern id="doodle" width="130" height="130" patternUnits="userSpaceOnUse" patternTransform="rotate(-12)">
+          <g fill="none" stroke="#D3DCEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <!-- cross -->
+            <path d="M24 10v28M14 20h20"/>
+            <!-- open book -->
+            <path d="M62 16c6-3 12-3 18 0v24c-6-3-12-3-18 0zM80 16c6-3 12-3 18 0v24c-6-3-12-3-18 0z"/>
+            <!-- speech bubble -->
+            <path d="M12 70h32a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H30l-8 8v-8h-10a4 4 0 0 1-4-4V74a4 4 0 0 1 4-4z"/>
+            <!-- ear -->
+            <path d="M70 84C70 72 77 64 86 64C95 64 101 71 101 79C101 88 94 90 92 97C90 104 85 108 79 108C74 108 71 104 71 100"/>
+            <path d="M80 84C80 77 83 74 87 74C91 74 93 77 93 80C93 85 88 86 87 91"/>
+          </g>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#doodle)"/>
+    </svg>
+
+    <div class="intro__navy"></div>
+
+    <svg class="intro__blob" viewBox="0 0 300 300">
+      <path d="M40 110C40 60 90 45 150 55C210 45 262 62 262 112C262 160 215 175 190 205C170 232 135 250 112 218C90 188 40 165 40 110Z" fill="#082B71"/>
+    </svg>
+
+    <div class="intro__brand">
+      <img src="images/logo.png" alt="" class="intro__logo">
+      <span class="intro__name">HU FELLOW</span>
+      <span class="intro__sub">Hawassa University Fellowship</span>
+    </div>
+
+    <div class="intro__welcome">
+      WELCOME TO HU FELLOW
+      <span class="big-picture">"ከደመናውም:: የመረጥሁት ልጄ ደህ ነው÷
+        አርሱን ስሙት የሚል ድምፅ መጣ፡፡"</span>
+        <span class="verse">ሉቃስ 9:35</span>
+        
+    </div>
+
+    <svg class="intro__wave" viewBox="0 0 390 60" preserveAspectRatio="none">
+      <path d="M0 0H390V24C330 56 250 56 195 34C140 12 60 12 0 44Z" fill="#082B71"/>
+    </svg>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
