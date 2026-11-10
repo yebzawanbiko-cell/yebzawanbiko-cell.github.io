@@ -439,7 +439,7 @@ button {
 
 /* Animations only run while the "play" class is on the intro */
 .intro.play {
-  animation: introOut 1.1s ease-in-out 4s both;
+  animation: introOut 1.1s ease-in-out 5s both;
 }
 
 .intro.play .intro__pattern {
